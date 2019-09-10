@@ -23,8 +23,6 @@ void setup()
 
 void draw() 
 {
-  text("y", 310, 10);
-  
   // adding vertical lines for grid.
   for (int x = 0; x <= 600; x = x+25)
   {
