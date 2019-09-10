@@ -6,11 +6,6 @@
 // This program provides the user with an empty canvas to draw 
 //graphs, which are color coordinatd based on the X and Y coordinates.
 
-int r = 0;    // red value
-//int g = 0;  // blue value
-//int b = 0;  // green value
-int inc = 1;  // incrent variable that gos up or down to shift colors
-
 PFont f;
 
 void setup() 
