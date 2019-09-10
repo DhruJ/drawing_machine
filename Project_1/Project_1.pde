@@ -1,7 +1,10 @@
-//Requirements & Deliverables:
-//At least one example of mouse interaction
-//At least one for loop (for(int i; i < 10; i++)….)
-//At least one conditional statement (if/then)
+// Dhruvang Jayswal
+// ART 105, Project 1 (Graphing Module).
+// Instructor:- Tiffany Funk
+// September 10, 2019.
+
+// This program provides the user with an empty canvas to draw 
+//graphs, which are color coordinatd based on the X and Y coordinates.
 
 int r = 0;    // red value
 //int g = 0;  // blue value
@@ -16,13 +19,20 @@ void setup()
   background (255);  // default backdround color.
   
   // making font to display X and Y.
-  f = createFont("Avenir-Roman-30.vlw", 30);
+  printArray(PFont.list());
+  f = createFont("HelveticaNeue", 30);
   textFont(f);
 }
 
 
 void draw() 
 {
+  // labeling X and Y axis. 
+  fill(0);
+  text("y", 306, 19);
+  fill(0);
+  text("x", 580, 320);
+  
   // adding vertical lines for grid.
   for (int x = 0; x <= 600; x = x+25)
   {
